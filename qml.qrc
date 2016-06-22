@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>resources/flightTimetable.gif</file>
+    </qresource>
+</RCC>
