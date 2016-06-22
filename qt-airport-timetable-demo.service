@@ -1,0 +1,10 @@
+[Unit]
+Description=Airport Dual Display Demo - Timetable
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/qt-airport-timetable-demo.sh
+
+[Install]
+WantedBy=multi-user.target

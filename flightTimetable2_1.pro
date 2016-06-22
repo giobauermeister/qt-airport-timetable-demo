@@ -3,7 +3,8 @@ TEMPLATE = app
 QT += qml quick
 CONFIG += c++11
 
-SOURCES += main.cpp
+SOURCES += \
+    timetable.cpp
 
 RESOURCES += qml.qrc
 
@@ -12,3 +13,10 @@ QML_IMPORT_PATH =
 
 # Default rules for deployment.
 include(deployment.pri)
+
+TARGET = airportTimetable
+
+unix {
+    target.path = /usr/bin/
+    INSTALLS += target \
+}
