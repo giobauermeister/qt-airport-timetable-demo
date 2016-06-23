@@ -7,13 +7,9 @@ Window {
     //width: 1024; height: 600
     visibility: "FullScreen"
 
-    Rectangle {
-        id: recGif
+    AnimatedImage {
+        id: animation
         anchors.fill: parent
-        AnimatedImage {
-            id: animation
-            anchors.fill: parent
-            source: "resources/flightTimetable.gif"
-        }       
+        source: "resources/flightTimetable.gif"
     }
 }
